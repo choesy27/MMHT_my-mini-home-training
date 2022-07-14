@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/layout/activity_main.xml" value="0.16458333333333333" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable-mdpi/button_back_normal.xml" value="0.17" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable/button_back.xml" value="0.179" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable/button_back_disabled.xml" value="0.17" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable/button_back_normal.xml" value="0.17" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable/button_back_pressed.xml" value="0.17" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/drawable/menu_selector_color.xml" value="0.17" />
+        <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/layout/activity_main.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/layout/fragment_calendar.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/layout/fragment_home.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/user/Documents/workspaces/summer-prj/MMHT_my-mini-home-training/app/src/main/res/layout/fragment_setting.xml" value="0.16485507246376813" />
