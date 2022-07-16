@@ -10,7 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private HomeFragment homeFragment;
-    private CalendarFragment calendarFragment;
+    private WalkingFragment walkingFragment;
     private SettingFragment settingFragment;
 
     @Override
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     break;
 
-                case R.id.menu_calendar:
+                case R.id.menu_walking:
                     setFragment(1);
                     break;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         homeFragment = new HomeFragment();
-        calendarFragment = new CalendarFragment();
+        walkingFragment = new WalkingFragment();
         settingFragment = new SettingFragment();
 
         setFragment(0);     // 첫 프래그먼트 화면 지정
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case 1:
-                fragmentTransaction.replace(R.id.mainFrame, calendarFragment);
+                fragmentTransaction.replace(R.id.mainFrame, walkingFragment);
                 fragmentTransaction.commit();
                 break;
 

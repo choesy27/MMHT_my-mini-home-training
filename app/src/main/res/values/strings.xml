@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">MMHT_my-mini-home-training</string>
-    <string name="menu_home">home</string>
-    <string name="menu_calendar">calendar</string>
-    <string name="menu_setting">setting</string>
+    <string name="app_name">마미홈트 : 나의 작은 홈 트레이닝</string>
+    <string name="menu_home">홈</string>
+    <string name="menu_walking">걷기</string>
+    <string name="menu_setting">설정</string>
 </resources>

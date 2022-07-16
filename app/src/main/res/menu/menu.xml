@@ -7,10 +7,10 @@
         android:title="@string/menu_home" />
 
     <item
-        android:id="@+id/menu_calendar"
+        android:id="@+id/menu_walking"
         android:enabled="true"
-        android:icon="@drawable/ic_calendar"
-        android:title="@string/menu_calendar" />
+        android:icon="@drawable/ic_walking"
+        android:title="@string/menu_walking" />
 
     <item
         android:id="@+id/menu_setting"
