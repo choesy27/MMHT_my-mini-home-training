@@ -46,15 +46,53 @@
         android:text="@string/record_time"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/record_time_btn"
-        android:layout_width="250dp"
+    <EditText
+        android:id="@+id/record_time_hour_input"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_below="@+id/record_date_btn"
-        android:layout_toEndOf="@+id/record_time"
+        android:layout_toEndOf="@id/record_time"
+        android:hint="@string/record_time_hour_input"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:nextFocusDown="@id/record_time_min_input"
         android:padding="5dp"
-        android:text="@string/record_time_btn"
-        android:textSize="15sp" />
+        android:textColorHint="@color/edit_hint" />
+
+    <TextView
+        android:id="@+id/record_time_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/record_date_btn"
+        android:layout_toEndOf="@+id/record_time_hour_input"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/record_time_hour"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/record_time_min_input"
+        android:layout_width="48dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/record_date_btn"
+        android:layout_toEndOf="@id/record_time_hour"
+        android:hint="@string/record_time_min_input"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:nextFocusDown="@id/record_exer_input"
+        android:padding="5dp"
+        android:textColorHint="@color/edit_hint" />
+
+    <TextView
+        android:id="@+id/record_time_min"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/record_date_btn"
+        android:layout_toEndOf="@+id/record_time_min_input"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/record_time_min"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/record_exer"
@@ -70,7 +108,7 @@
         android:id="@+id/record_exer_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/record_time_btn"
+        android:layout_below="@+id/record_time"
         android:layout_toEndOf="@+id/record_exer"
         android:hint="@string/record_exer_input"
         android:importantForAutofill="no"
@@ -81,11 +119,11 @@
     <TextView
         android:id="@+id/record_final_write"
         android:layout_width="400dp"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/record_exer"
         android:layout_centerInParent="true"
         android:padding="10dp"
-        android:text="@string/record_final_write"
+        android:text="@string/record_write"
         android:textSize="20sp" />
 
     <Button

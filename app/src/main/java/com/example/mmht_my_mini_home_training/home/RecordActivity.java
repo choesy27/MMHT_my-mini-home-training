@@ -1,7 +1,9 @@
 package com.example.mmht_my_mini_home_training.home;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.example.mmht_my_mini_home_training.R;
 
+import java.util.Calendar;
 import java.util.Objects;
 
 public class RecordActivity extends AppCompatActivity {
@@ -23,6 +26,25 @@ public class RecordActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);  // 뒤로 가기
         getSupportActionBar().setTitle(R.string.home_record);
+
+        Calendar calendar = Calendar.getInstance();
+        int mYear = calendar.get(Calendar.YEAR);
+        int mMonth = calendar.get(Calendar.MONTH);
+        int mDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+        Button record_date = findViewById(R.id.record_date_btn);
+
+        // 나중에 하드코딩 해결할 것
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                                            (datePicker, year, month, dayOfMonth) ->
+                record_date.setText(year + "/" + (month + 1) + "/" + dayOfMonth),
+                                    mYear, mMonth, mDay);
+
+        record_date.setOnClickListener(view -> {
+            if (record_date.isClickable()) {
+                datePickerDialog.show();
+            }
+        });
     }
 
     @Override
