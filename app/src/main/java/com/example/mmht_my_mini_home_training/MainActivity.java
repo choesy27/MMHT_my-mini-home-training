@@ -5,13 +5,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
+import com.example.mmht_my_mini_home_training.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private HomeFragment homeFragment;
     private WalkingFragment walkingFragment;
     private SettingFragment settingFragment;
+
+    private long pressed_time = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
             switch (menuItem.getItemId()) {
                 case R.id.menu_home:
                     setFragment(0);
-
-                default:
                     break;
 
                 case R.id.menu_walking:
@@ -68,6 +70,21 @@ public class MainActivity extends AppCompatActivity {
 
             default:
                 break;
+        }
+    }
+
+    // 뒤로가기 두 번 누르면 종료
+    @Override
+    public void onBackPressed() {
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - pressed_time;
+
+        long finished_time = 1000;
+        if (0 <= intervalTime && finished_time >= intervalTime) {
+            finish();
+        } else {
+            pressed_time = tempTime;
+            Toast.makeText(getApplicationContext(), R.string.back_button, Toast.LENGTH_LONG).show();
         }
     }
 }

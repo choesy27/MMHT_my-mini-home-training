@@ -11,4 +11,5 @@
     <!-- custom color -->
     <color name="grey">#FFD3D3D3</color>
     <color name="green">#FF008000</color>
+    <color name="edit_hint">#757575</color>
 </resources>
