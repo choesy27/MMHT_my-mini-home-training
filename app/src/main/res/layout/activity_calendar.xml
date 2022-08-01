@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.CalendarActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/calendar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/calendar_month"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow_green"
+        android:gravity="center"
+        android:text="@string/calendar_date"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:textSize="20sp" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar_cal"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingStart="10dp"
+        android:paddingTop="30dp"
+        android:paddingEnd="10dp"
+        app:compactCalendarBackgroundColor="@color/yellow_green"
+        app:compactCalendarCurrentDayBackgroundColor="@color/dark_olive_green"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/olive"
+        app:compactCalendarMultiEventIndicatorColor="@color/white"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextColor="@color/white"
+        app:compactCalendarTextSize="15sp" />
+
+    <TextView
+        android:id="@+id/calendar_click"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow_green"
+        android:gravity="center"
+        android:text="@string/home_calendar"
+        android:textAlignment="center"
+        android:textColor="#0D47A1" />
+
+</LinearLayout>
