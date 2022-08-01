@@ -122,15 +122,27 @@
         android:layout_height="200dp"
         android:layout_below="@+id/record_exer"
         android:layout_centerInParent="true"
+        android:background="@drawable/xml_textview_border"
         android:padding="10dp"
         android:text="@string/record_write"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/record_write_btn"
-        android:layout_width="400dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/record_final_write"
-        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:text="@string/record_write_btn" />
+
+    <Button
+        android:id="@+id/record_save_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/record_final_write"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/record_write_btn"
+        android:padding="5dp"
+        android:text="@string/record_save_btn" />
 </RelativeLayout>
