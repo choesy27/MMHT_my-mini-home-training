@@ -35,6 +35,10 @@ public class HomeFragment extends Fragment {
         });
 
         // 캘린더 버튼 클릭 이벤트(캘린더 액티비티 화면으로 전환)
+        calendar.setOnClickListener(view1 -> {
+            Intent intent = new Intent(getActivity(), CalendarActivity.class);
+            startActivity(intent);
+        });
 
         // 카메라 버튼 클릭 이벤트(카메로 액티비티 화면으로 전환)
 

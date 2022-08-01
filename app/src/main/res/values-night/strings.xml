@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="menu_home">home</string>
-    <string name="menu_calendar">calendar</string>
-    <string name="menu_setting">setting</string>
+
 </resources>

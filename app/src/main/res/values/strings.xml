@@ -26,4 +26,5 @@
     <!-- java code -->
     <string name="back_button">한 번 더 누르면 앱이 종료됩니다.</string>
     <string name="record_write_btn">입력 미리보기</string>
+    <string name="calendar_date">0000년 0월</string>
 </resources>

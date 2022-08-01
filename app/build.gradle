@@ -39,4 +39,11 @@ dependencies {
     // Add dependencies
     // Bottom Navigation View
     implementation 'com.google.android.material:material:1.6.1.'
+
+    // To use Google Map
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+    // To use Calendar Event Display
+    implementation 'com.github.sundeepk:compact-calendar-view:3.0.0'
 }
