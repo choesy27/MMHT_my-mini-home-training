@@ -10,6 +10,7 @@
     <string name="home_camera">카메라</string>
     <string name="image_des">사용자 이미지</string>
 
+    <string name="calendar_date">0000년 0월</string>
     <string name="record_date">"날짜 : "</string>
     <string name="record_date_btn">날짜 선택</string>
     <string name="record_time">"운동 시간 : "</string>
@@ -21,10 +22,12 @@
     <string name="record_exer">"운동 종류 : "</string>
     <string name="record_exer_input">운동 종류를 입력하세요.</string>
     <string name="record_write">최종 기록 문장</string>
+    <string name="record_write_btn">입력 미리보기</string>
     <string name="record_save_btn">오늘의 홈트 기록하기</string>
+    <string name="walking_count">0</string>
+    <string name="walking_count_tag">"일일 걸음 수 : "</string>
+    <string name="walking_count_reset">초기화</string>
 
     <!-- java code -->
     <string name="back_button">한 번 더 누르면 앱이 종료됩니다.</string>
-    <string name="record_write_btn">입력 미리보기</string>
-    <string name="calendar_date">0000년 0월</string>
 </resources>
