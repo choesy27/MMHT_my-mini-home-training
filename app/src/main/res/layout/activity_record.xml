@@ -52,9 +52,10 @@
         android:layout_height="50dp"
         android:layout_below="@+id/record_date_btn"
         android:layout_toEndOf="@id/record_time"
-        android:hint="@string/record_time_hour_input"
+        android:hint="@string/num_one"
         android:importantForAutofill="no"
         android:inputType="number"
+        android:maxLength="2"
         android:nextFocusDown="@id/record_time_min_input"
         android:padding="5dp"
         android:textColorHint="@color/edit_hint" />
@@ -76,9 +77,10 @@
         android:layout_height="50dp"
         android:layout_below="@+id/record_date_btn"
         android:layout_toEndOf="@id/record_time_hour"
-        android:hint="@string/record_time_min_input"
+        android:hint="@string/num_two"
         android:importantForAutofill="no"
         android:inputType="number"
+        android:maxLength="2"
         android:nextFocusDown="@id/record_exer_input"
         android:padding="5dp"
         android:textColorHint="@color/edit_hint" />
