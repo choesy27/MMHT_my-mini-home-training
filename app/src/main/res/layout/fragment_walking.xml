@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".WalkingFragment">
+
+    <com.example.mmht_my_mini_home_training.CustomToolbar
+        android:id="@+id/walking_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:text="@string/menu_walking"
+        app:textColor="@color/black" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -30,4 +39,4 @@
             android:text="@string/walking_count"
             android:textSize="20sp" />
     </RelativeLayout>
-</FrameLayout>
+</LinearLayout>
