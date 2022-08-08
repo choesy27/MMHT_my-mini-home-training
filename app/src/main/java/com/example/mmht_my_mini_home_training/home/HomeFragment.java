@@ -42,7 +42,8 @@ public class HomeFragment extends Fragment {
 
         // 카메라 버튼 클릭 이벤트(카메라 액티비티 화면으로 전환)
         camera.setOnClickListener(view1 -> {
-
+            Intent intent = new Intent(getActivity(), CameraActivity.class);
+            startActivity(intent);
         });
         return view;
     }
